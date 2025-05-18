@@ -13,7 +13,7 @@ main {
   display: grid;
   grid-template-columns: 300px 2fr 1.5fr /*1.51fr 2fr 1.5fr*/;
   align-items: center;
-  padding: 92px 51px 80px;/*коректировка padding вверх/вниз */
+  padding: 92px 51px 90px;/*коректировка padding вверх/вниз */
 }
 
 .header__links-list {
@@ -59,7 +59,7 @@ main {
 }
 
 .header__address {
-  justify-self: end;
+  justify-self: right;
   font-style: inherit;
 }
 
@@ -74,13 +74,14 @@ main {
   font-size: 18px;
   line-height: 1.35;
 }
-/*корр. padding +50px*/
+/*корр. padding +50px, добавлена центровка на изображение*/
 .cover {
   position: relative;
-  padding: 165px 50px 50px 50px;
+  padding: 200px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .overlay {
