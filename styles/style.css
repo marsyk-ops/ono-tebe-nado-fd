@@ -13,7 +13,7 @@ main {
   display: grid;
   grid-template-columns: 300px 2fr 1.5fr /*1.51fr 2fr 1.5fr*/;
   align-items: center;
-  padding: 92px 51px 60px;
+  padding: 92px 51px 70px;/*коректировка padding вверх/вниз */
 }
 
 .header__links-list {
