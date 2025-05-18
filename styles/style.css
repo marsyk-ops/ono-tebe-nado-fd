@@ -45,9 +45,11 @@ main {
 /* Скорректировано значение свойства display и убрано св-во gap*/
 .header__logo {
   display: block;
-  justify-self: center;
-  align-self: center;
-  width: 140px;
+  place-content: center center;
+  width: 148px;
+  height: 105px;
+  top: 92px;
+  left: 478px;
 }
 
 .header__logo-image {
