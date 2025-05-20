@@ -14,10 +14,12 @@ main {
 }
 
 .header {
+  width: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: 300px 2fr 1.5fr /*1.51fr 2fr 1.5fr*/;
   align-items: center;
-  padding: 16px 10px 10px;/*коректировка padding вверх/вниз */
+  padding: 92px 51px 89px;/*коректировка padding вверх/вниз */
 }
 
 .header__links-list {
@@ -313,8 +315,7 @@ main {
 .footer {
   display: flex;
   justify-content: space-between;
-  width: 1100px;
-  height: 180px;
+  padding: 18px 50px 80px;
 }
 
 .footer__social-icon {
