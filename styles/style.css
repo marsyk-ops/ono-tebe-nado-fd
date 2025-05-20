@@ -17,7 +17,7 @@ main {
   display: grid;
   grid-template-columns: 300px 2fr 1.5fr /*1.51fr 2fr 1.5fr*/;
   align-items: center;
-  padding: 92px 24px 96px;/*коректировка padding вверх/вниз */
+  padding: 16px 10px 10px;/*коректировка padding вверх/вниз */
 }
 
 .header__links-list {
@@ -29,10 +29,6 @@ main {
 
 .header__links-list-item {
   list-style: circle;
-}
-
-.header__links-list-item_no-bullit {
-  list-style: none;
 }
 
 .header__link {
@@ -79,7 +75,7 @@ main {
 .address__address-text {
   font-size: 18px;
   line-height: 1.35;
-}
+  }
 /*корр. padding +50px, добавлена центровка на изображение*/
 .cover {
   position: relative;
@@ -131,7 +127,7 @@ main {
 }
 
 .letter-spacing-extended {
-  letter-spacing: 25px; /*40->60*/
+  letter-spacing: 40px; /*40->60*/
 }
 
 .remove-spacing {
@@ -145,7 +141,7 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 78px;
-  padding: 136px 0 0;
+  padding: 100px 0 0; /*положение фразы относительно низа*/
 }
 
 .cover__description-text {
@@ -300,7 +296,7 @@ main {
   padding-bottom: 101px;
 }
 
-.text{
+.text {
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -335,10 +331,6 @@ main {
   font-size: 18px;
   line-height: normal;
   text-underline-position: under;
-}
-
-.footer__menu-link_active {
-  text-decoration: none;
 }
 
 .footer__social-list {
