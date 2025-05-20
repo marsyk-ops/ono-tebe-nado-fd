@@ -17,12 +17,14 @@ main {
   display: grid;
   grid-template-columns: 300px 2fr 1.5fr /*1.51fr 2fr 1.5fr*/;
   align-items: center;
-  padding: 92px 24px 90px;/*коректировка padding вверх/вниз */
+  padding: 92px 24px 96px;/*коректировка padding вверх/вниз */
 }
 
 .header__links-list {
   display: flex;
-  gap: 32px;
+  gap: 30px;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .header__links-list-item {
@@ -258,92 +260,101 @@ main {
   text-underline-position: under;
   width: fit-content;
 }
-
-.about {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 1052px;
-  height: 595px;
-  column-gap: 24px;
-  padding: 0 50px;
+/*переработаны параметры about*/
+.about{
+    padding: 146px 24px 178px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.about__column {
-  justify-self: center;
+.about__logo{
+    background-color: #000000;
+    border-radius: 100%;
+    width: 240px;
+    height: 240px;
 }
 
-.about__column_text {
-  grid-column: 2/4;
+.about__logo-image{
+    padding: 63px 48px 64px 51px;
 }
 
-.about__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  background-color: #000000;
+.about__column{
+    padding-top: 35px;
+    padding-left: 47px;
+}
+.about__column__text{
+    padding-left: 72px;
+    padding-top: 136px;
+}
+.about__title{
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    color: #000;
+    text-transform: uppercase;
+    padding-bottom: 101px;
 }
 
-.about__logo-image {
-  width: 148px;
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 26px; 
 }
 
-.about__title {
-  padding: 100px 0 104px;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 1;
-  text-transform: uppercase;
+.about__text{
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color:#000; 
+}
+/*переработаны параметры footer*/
+.footer{
+    padding: 0 50px 91px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-.about__text {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+.footer__menu-link_active{
+    text-decoration: none;
 }
 
-.about__text p {
-  font-size: 20px;
-  line-height: normal;
+.footer__menu-list{
+    text-align: center;
+    text-transform: lowercase;
 }
 
-.footer {
-  width: 1100px;
-  height: 180px;
-  display: flex;
-  justify-content: space-between;
-  padding: 180px 50px 80px;
+.footer__link, .footer__address{
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
 }
 
-.address {
-  width: 264px;
-  height: 98px;
-  }
-
-.footer__social-icon {
-  width: auto;
-  height: 48px; 
+.footer__social-list{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+gap: 48px;
 }
 
-.footer__social-list {
-  display: flex;
-  gap: 48px; /*50->48*/
-  list-style: none;
+.footer__menu-list, .footer__social-list{
+list-style-type: none;
 }
 
-.footer__menu-list {
-  text-align: center;
-  list-style: none;
+.footer__social-icon{
+    width: 48px;
+    height: 48px;
 }
 
-.footer__menu-link {
-  font-size: 18px;
-  line-height: normal;
-  text-underline-position: under;
-}
-
-.footer__menu-link_active {
-  text-decoration: none;
+.footer__menu-list-item{
+    font-family: Raleway, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.13px;
 }
