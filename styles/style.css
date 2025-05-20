@@ -315,7 +315,7 @@ main {
 .footer {
   display: flex;
   justify-content: space-between;
-  padding: 18px 50px 50px;
+  padding: 18px 50px 10px;
 }
 
 .footer__social-icon {
