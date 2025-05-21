@@ -175,7 +175,7 @@ main {
 }
 
 .lots {
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
 .lots__heading {
@@ -210,7 +210,7 @@ main {
   gap: 30px;
   width: auto;
   height: 100%;
-  padding: 50px 40px;
+  padding: 40px 40px; /*размер карточек лотов */
 }
 
 .card_type_film {
