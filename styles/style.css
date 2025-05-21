@@ -81,7 +81,7 @@ main {
   position: relative;
   width: 1100px;
   height: 757px;
-  padding: 200px 50px 50px 50px;
+  padding: 150px 20px 40px 50px;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -107,7 +107,7 @@ main {
   color: #FFF;
   font-weight: bold;
   font-size: 100px;
-  line-height: 1.15;
+  line-height: 1.10;
   letter-spacing: 30px; /*40->30*/
   text-transform: uppercase;
   }
@@ -117,21 +117,17 @@ main {
 }
 
 .aligned-text_center {
-  line-height: 1;
+  line-height: 1.5;
   text-align: center;
 }
 
 .aligned-text_right {
-  line-height: 1;
+  line-height: 1.1;
   text-align: right;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 40px; /*40->60*/
-}
-
-.remove-spacing {
-  letter-spacing: normal;
+  letter-spacing: 30px; /*40->60*/
 }
 
 .cover__description {
@@ -141,18 +137,17 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 78px;
-  padding: 100px 0 0; /*положение фразы относительно низа*/
+  padding: 90px 10px 0; /*положение фразы относительно низа*/
 }
 
 .cover__description-text {
   color: #FFF;
   font-family: 'Raleway';
   font-style: normal;
-  font-weight: 400;
   font-size: 22px; /*20->22*/
-  line-height: 28px;
+  line-height: 20px;
   text-transform: uppercase;
-  word-spacing: 20px;
+  word-spacing: 17px;
   z-index: 1;
 }
 
@@ -208,9 +203,9 @@ main {
   flex-direction: column;
   justify-content: space-between;
   gap: 30px;
-  width: auto;
-  height: 100%;
-  padding: 30px 40px; /*размер карточек лотов */
+  width: 330px;
+  height: 595px;
+  padding: 40px 30px 40px; /*размер карточек лотов */
 }
 
 .card_type_film {
@@ -256,14 +251,14 @@ main {
   font-size: 20px;
   text-decoration-line: underline;
   text-underline-position: under;
-  width: fit-content;
+  
 }
 /*переработаны параметры padding для about*/
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 24px;
-  padding: 0px 0 30px;
+  padding: 0 24px 0;
 }
 
 .about__column {
@@ -289,7 +284,7 @@ main {
 }
 
 .about__title {
-  padding: 100px 0 104px;
+  padding: 104px 0 103px;
   font-weight: bold;
   font-size: 40px;
   line-height: 1;
@@ -299,13 +294,15 @@ main {
 .about__text {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 40px 40px;
+  line-height: 1.5;
 }
 
 .about__text p {
+  display: flex;
   font-size: 20px;
-  line-height: normal;
-}
+  line-height: 20px;
+  }
 /*переработаны параметры footer*/
 .footer {
   display: flex;
