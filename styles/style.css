@@ -258,12 +258,12 @@ main {
   text-underline-position: under;
   width: fit-content;
 }
-/*переработаны параметры about*/
+/*переработаны параметры padding для about*/
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 24px;
-  padding: 0 50px;
+  padding: 0px 0 50px;
 }
 
 .about__column {
