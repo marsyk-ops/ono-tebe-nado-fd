@@ -210,7 +210,7 @@ main {
   gap: 30px;
   width: auto;
   height: 100%;
-  padding: 30px 30px; /*размер карточек лотов */
+  padding: 30px 40px; /*размер карточек лотов */
 }
 
 .card_type_film {
