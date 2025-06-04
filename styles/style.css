@@ -35,8 +35,8 @@ main {
   margin-right: 28px;
 }
 
-.header__links-list .header__links-list-item_no-bullet {
-  list-style-type: none;
+.header__links-list-item_no-bullit {
+  list-style: none;
 }
 
 .header__links-list-item a {
@@ -120,7 +120,7 @@ main {
   display: flex;
   flex-direction: column;
   height: auto;
-  font-weight: 700px;
+  font-weight: 700;
   font-size: 100px;
   text-transform: uppercase;
   line-height: 1.33;
@@ -148,6 +148,7 @@ main {
 .cover__description-text {
   /*убран параметр font-famaly*/
   color: #fff;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-size: 22px;
   line-height: 20px;
@@ -247,11 +248,12 @@ main {
 }
 
 .card__text {
+  /*убран параметр font-famaly, а так же в global.css добавлены популярные системные шрифты для Windows и macOS*/
   position: relative;
   z-index: 1;
   color: #ffffff;
-  font-family: "Raleway";
   text-decoration: none;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-size: 20px;
   margin-left: 2px;
   margin-top: 32px;
